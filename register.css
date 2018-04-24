@@ -1,0 +1,49 @@
+body {
+  font-family: Verdana, sans-serif;
+
+
+}
+h3{
+  font-size: 24px;
+  text-align: center;
+}
+span{
+  text-align: right;
+}
+.text-info{
+  font-size: 18px;
+  margin-bottom: auto;
+}
+.submit {
+  background-color: green;
+  border: 1px;
+  color: white;
+  padding: 16px 32px;
+  margin-left:auto;
+  margin-right:auto
+  text-align:center;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 200px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.logregis{
+    background-color: black;
+    color: white;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login{
+  text-align: left;
+}
+#register{
+  text-align: right;
+}
