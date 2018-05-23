@@ -34,7 +34,9 @@ body {
 }
 
 .mySlides {display: none;}
-
+.mySlides{
+  height: 300px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -82,8 +84,8 @@ footer {
   to {opacity: 1}
 }
 
-body{
+/* body{
   width: 1024px;
   margin-left: auto;
   margin-right: auto;
-}
+} */

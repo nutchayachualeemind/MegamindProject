@@ -8,4 +8,5 @@
     $cssDir = $assets.'/css';
     $jsDir = $assets.'/js';
     $fontDir = $assets.'/font';
+    $nav = 'libs/navBar.php'
 ?>
