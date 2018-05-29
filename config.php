@@ -1,5 +1,5 @@
-<?php 
-    
+<?php
+
     $fullURL = 'http://localhost/MegamindProject';
     $header = 'libs/header.php';
     $footer = 'libs/footer.php';
@@ -8,5 +8,7 @@
     $cssDir = $assets.'/css';
     $jsDir = $assets.'/js';
     $fontDir = $assets.'/font';
-    $nav = 'libs/navBar.php'
+    $nav = 'libs/navBar.php';
+    $shopBar = 'libs/shopBar.php';
+    $detailShoes = 'libs/detailShoes.php';
 ?>
