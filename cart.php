@@ -29,7 +29,7 @@
         $amo = $amo + $productrow['price'];
     ?>
     <div class="card">
-      <img src="<?php echo $imgDir ?>/Shoes/<?php echo $productrow['img']?>"/>
+    <center><img src="<?php echo $imgDir ?>/Shoes/<?php echo $productrow['img']?>"/></center>
       <h3><?php echo $productrow['brand']?> <?php echo $productrow['name']?></h3>
       <div class="price">
         <?php echo $productrow['price']?> THB

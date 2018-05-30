@@ -14,7 +14,7 @@
   <div class="show">
     <?php while($row = $result->fetch_assoc()){ ?>
     <div class="card">
-      <img src="<?php echo $imgDir ?>/Shoes/<?php echo $row['img']?>"/>
+      <center><img src="<?php echo $imgDir ?>/Shoes/<?php echo $row['img']?>"/></center>
       <h3><?php echo $row['brand']?> <?php echo $row['name']?></h3>
       <div class="price">
         <?php echo $row['price']?> THB
