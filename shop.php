@@ -1,17 +1,30 @@
 <?php require 'config.php'; ?>
 <?php require $header; ?>
-<?php require $shopBar; ?>
-<div class="header">
-<h1 style="text-align:center;"> All Shoes</h1>
-</div>
-<figure class="salepic">
-  <img src="<?php echo $imgDir ?>/Shoes/shoes2.jpg" alt="sample57" />
-  <figcaption>
-    <h3>PUREBOOST X TR 3.0</h3>
-    <div class="price">
-      4,200 THB
+<?php require $nav; ?>
+
+<?php 
+    $result = $conn->query('SELECT * FROM `shop`');
+?>
+
+<br/>
+<div class="container block">
+  <div class="text">
+    <span alt="New Arrivals">All shoes</span>
+  </div>
+  <div class="show">
+    <?php while($row = $result->fetch_assoc()){ ?>
+    <div class="card">
+      <img src="<?php echo $imgDir ?>/Shoes/<?php echo $row['img']?>"/>
+      <h3><?php echo $row['brand']?> <?php echo $row['name']?></h3>
+      <div class="price">
+        <?php echo $row['price']?> THB
+      </div>
+      <button class="shopBtn"  onclick="location.href = 'gettocart.php?pid=<?php echo $row['id']; ?>'">
+        <i class="fas fa-shopping-cart"></i> Add to cart
+      </button>
     </div>
-  </figcaption><i class="ion-android-cart"></i>
-  <a href="#"></a>
-</figure>
+    <?php } ?>
+  </div>
+</div>
+<br/>
 <?php require $footer; ?>

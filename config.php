@@ -11,4 +11,14 @@
     $nav = 'libs/navBar.php';
     $shopBar = 'libs/shopBar.php';
     $detailShoes = 'libs/detailShoes.php';
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dnName = "shop";
+    $imgDirUpload =  '/MegamindProject/assets/img/shoes';
+
+    session_start();
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dnName);
 ?>

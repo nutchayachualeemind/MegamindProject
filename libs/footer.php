@@ -3,3 +3,7 @@
     <h2>MegaMind</h2>
     <span>Thamasat University</span>
 </footer>
+
+<?php 
+$conn->close();
+?>
