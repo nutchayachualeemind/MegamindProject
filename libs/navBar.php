@@ -25,3 +25,10 @@ if(isset($_SESSION["username"])&&isset($_SESSION["type"])){
   <?php if($login&&$admin) {?><a href="addproduct.php" style="width:25%"><i class="fas fa-plus-circle"></i> Add product</a> <?php } ?>
   <?php if($login) {?><a href="logout.php" style="width:<?php echo $ratio2; ?>%"><i class="fas fa-sign-out-alt"></i> Logout</a> <?php } ?>
 </div>
+
+<div>
+  <img class="mySlides" src="<?php echo $imgDir ?>/slidpic1.jpg" style="width:100%">
+  <img class="mySlides" src="<?php echo $imgDir ?>/slidpic2.jpg" style="width:100%">
+  <img class="mySlides" src="<?php echo $imgDir ?>/slidpic3.jpg" style="width:100%">
+  <img class="mySlides" src="<?php echo $imgDir ?>/slidpic4.jpg" style="width:100%">
+</div>

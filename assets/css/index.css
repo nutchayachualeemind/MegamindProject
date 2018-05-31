@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+.message{
+  background-color: #196619;
+  color:#fff;
+}
+
 .logo {
   text-align: center;
   margin: 10px;
