@@ -12,9 +12,9 @@ if(isset($_SESSION["username"])){
 }
 
 if(isset($_FILES["fileToUpload"])&&isset($_POST["pname"])&&isset($_POST["pprice"])&&isset($_POST["pbrand"])){
-    $result = $conn->query('SELECT `auto_increment` FROM INFORMATION_SCHEMA.TABLES WHERE table_name = \'shop\'');
+    $result = $conn->query('SELECT * FROM shop ORDER BY ID DESC LIMIT 1');
     $row = $result->fetch_assoc();
-    $last = $row['auto_increment'];
+    $last = $row['id']+1;
 
 
     $imageFileType = strtolower(pathinfo(basename($_FILES["fileToUpload"]["name"]),PATHINFO_EXTENSION));
